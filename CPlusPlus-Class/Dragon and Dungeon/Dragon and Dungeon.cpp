@@ -12,6 +12,7 @@ first i create the main that contain the first menu and the gestion of differant
 
 int GameEasy();
 int GameHard();
+int EncounterRabit(int, int, int, int);
 
 
 int main()
@@ -121,7 +122,7 @@ int GameEasy()
     std::cout << "Allez on y vas! forêt nous voici!" << std::endl;
 
     
-    while (forestStep >= 3)
+    while (forestStep <= 3)
     {
         forestStep++;//tell one step in the forest
 
@@ -129,12 +130,13 @@ int GameEasy()
 
         if (encounterValue <=30) //thats give a chance up to 30% to give this encounter(1 to 30)
         {
-
+            
 
         }
         else // 70% for this encounter (31 to 100)
         {
 
+            EncounterRabit(playerHitPoint, playerDamageDeal, numberPotion, numberScroll);
 
         }
         
@@ -173,5 +175,72 @@ int GameHard()
 {
 
     return EXIT_FAILURE;
+
+}
+
+int EncounterRabit(int playerHitPoint, int playerDamageDeal, int numberPotion, int numberScroll)
+{
+    bool endFight = false;//bool for finish the fight and return to the main game prog(GameEasy or GameHard)
+    int playerAction = 0;//the action the player tell us to do
+   
+
+    std::cout << "Vous faite quelque pas dans la fôret" << std::endl;// some speech for the begining of the fight
+    std::cout << "Attention il y a un lapin sur le sentier" << std::endl;
+    std::cout << "un lapin?" << std::endl;
+    std::cout << "oui un lapin fait gaffe il est trés dangereux." << std::endl;
+    std::cout << "Vous vous moqué de moi?" << std::endl;
+    std::cout << "bien sur que non il peus vous tué avec ces dent petite et pointue!" << std::endl;//some reference ;3
+    std::cout << "... bon il me faut donc le terrasser j'imagine" << std::endl;
+
+    while (!endFight)
+    {
+        std::cout << "c'est votre tour de combat, il vous reste " << numberPotion << " potion et " << numberScroll << " sort de flamme" << std::endl;// tell the player about ther inventory
+        std::cout << "de plus votre constitution est a " << playerHitPoint << std::endl;//and ther hit point.
+        std::cout << "vous pouvez :\n1. Attaquer\n2. Blocker" << std::endl;//tell the player action
+            if (numberPotion > 0)//if the player don't have any potion the action don't apear, idem for the scroll
+            {
+
+                std::cout << "3. Boire une potion" << std::endl;
+
+            }
+            if (numberScroll > 0)
+            {
+
+                std::cout << "4. Utiliser le sort de flamme" << std::endl;
+            }
+            playerAction = 0;//simple reset befor asking the player what if went to do
+
+            while (!(5 > playerAction && playerAction> 0))
+            {
+
+
+                
+                std::cin >> playerAction;//ask the action of the player input to 1 to 4 
+                if (!(5 > playerAction && playerAction > 0))
+                {
+                    std::cout << "Veuillez Choisire une action valable, la valeurs doit ce trouver entre 1 et 4" << std::endl;
+
+                }
+                if (playerAction == 3 && numberPotion <= 0)
+                {
+                    std::cout << "vous n'avez plus de potion, veuillez choisire une autre action" << std::endl;
+                    playerAction = 0;
+
+                }
+                if (playerAction == 4 && numberScroll <= 0)
+                {
+                    std::cout << "vous n'avez plus de potion, veuillez choisire une autre action" << std::endl;
+                    playerAction = 0;
+
+                }
+
+            }
+
+
+
+
+    }
+
+    return EXIT_SUCCESS;
 
 }
