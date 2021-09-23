@@ -24,6 +24,7 @@
     <ProjectGuid>{c6b4b55a-7c72-4606-a2bc-b9f13efcdf6b}</ProjectGuid>
     <RootNamespace>DragonandDungeon</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>01.01. Form. Dragon</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

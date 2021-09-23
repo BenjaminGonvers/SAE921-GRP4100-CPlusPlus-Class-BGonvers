@@ -24,6 +24,7 @@
     <ProjectGuid>{0698c716-be87-43da-bd49-f271f7171d84}</ProjectGuid>
     <RootNamespace>My0102arrays</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>01.02.  Ex. arrays!</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
