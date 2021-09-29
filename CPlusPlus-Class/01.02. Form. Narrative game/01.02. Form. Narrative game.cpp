@@ -44,7 +44,7 @@ Character initPlayerCharacterCreation()
     std::cin >> initCharacter.name;
     initCharacter.title = "Comandant";
     std::cout << "bienvenu a bord " << initCharacter.title << " " << initCharacter.name << "!" << std::endl;
-    std::cout << "il vous reste a choisire votre compétence et le nom de votre vaissaul" << std::endl;
+    std::cout << "il vous reste a choisire votre compétence et le nom de votre vaissau" << std::endl;
     std::cout << "il y a 4 compétence disponible:\n1. Leadership\n2. Flight ACE\n3. ingener\n4. Métamorphe" << std::endl;
     do
     {
