@@ -2,6 +2,7 @@
 #include <iostream>
 #include "point.h"
 
+void errorEntry();
 
 int main()
 {
@@ -43,8 +44,29 @@ int main()
 			std::cout << "le segond ce trouve en X = " << segondPoint.tellPosX() << " et en Y = " << segondPoint.tellPosY() << std::endl;
 			break;
 		case 2:
-			std::cout << "vous voulez changer la position de quel point?\n1. premier\n2. segond" << std::endl;
-			std::cout << "en construction" << std::endl;
+			int transX;
+			int transY;
+			do {
+				std::cout << "vous voulez changer la position de quel point?\n1. premier\n2. segond" << std::endl;
+				std::cin >> playerChoice;
+				std::cout << std::endl;
+				if (!(playerChoice == 1) && !(playerChoice == 2)){
+					errorEntry();
+				}
+			} while (!(playerChoice == 1) && !(playerChoice == 2));
+			
+			std::cout << "veuillez indiquer la translation désirée de l'abscisse (Axe X)." << std::endl;
+			std::cin >> transX;
+			std::cout << "\nMaintenent veuillez indiquer la translation desirée de l'ordonnée(Axe Y)" << std::endl;
+			std::cin >> transY;
+			if (playerChoice == 1){
+				firstPoint.ChangePosX(transX);
+				firstPoint.ChangePosY(transY);
+			}
+			else if (playerChoice == 2) {
+				segondPoint.ChangePosX(transX);
+				segondPoint.ChangePosY(transY);
+			}
 			break;
 		case 3:
 			std::cout << "en construction" << std::endl;
@@ -56,15 +78,21 @@ int main()
 			finish = true;
 			break;
 		default:
-			std::cout << "veuillez entrer une valeurs correct" << std::endl;
-			std::cout << "enter pour continuer" << std::endl;
-			std::cin.clear();
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			std::cin.ignore();
+			errorEntry();
 			break;
 		}
 
 	} while (!finish);
 
 
+}
+
+
+void errorEntry() {
+
+	std::cout << "veuillez entrer une valeurs correct" << std::endl;
+	std::cout << "enter pour continuer" << std::endl;
+	std::cin.clear();
+	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	std::cin.ignore();
 }
