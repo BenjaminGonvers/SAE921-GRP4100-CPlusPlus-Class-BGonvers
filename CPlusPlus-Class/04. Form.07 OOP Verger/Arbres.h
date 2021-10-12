@@ -6,15 +6,15 @@ class Arbres :
    public Vergers
 {
 private:
-    std::string treeName;
-    std::string fruitName;
-    int numberTree;
+    std::string treeName_;
+    std::string fruitName_;
+    int numberTree_;
     int maxProd_;
     int minProd_;
-    int valueFruit;
+    int valueFruit_;
 public:
-    Arbres();//constructeur
-    Arbres(std::string,std::string,int,int);//constructeur avec variable
+    Arbres();//constructeur probably don't use him
+    Arbres(std::string,std::string,int,int);//constructeur avec variable(tree name/fruitName/maxprod/minProd)
     ~Arbres();//destructeur
 
     std::string printTreeName(); //récupére le nom de l'arbre
