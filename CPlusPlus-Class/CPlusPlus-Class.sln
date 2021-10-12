@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04. EX.04 OOP Magasin bonbo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04. EX.06 OOP Inheritance", "04. EX.06 OOP Inheritance\04. EX.06 OOP Inheritance.vcxproj", "{8DCA3278-FE2A-476E-9A3C-C4B58CEB26E7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04. Form.07 OOP Verger", "04. Form.07 OOP Verger\04. Form.07 OOP Verger.vcxproj", "{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -177,6 +179,14 @@ Global
 		{8DCA3278-FE2A-476E-9A3C-C4B58CEB26E7}.Release|x64.Build.0 = Release|x64
 		{8DCA3278-FE2A-476E-9A3C-C4B58CEB26E7}.Release|x86.ActiveCfg = Release|Win32
 		{8DCA3278-FE2A-476E-9A3C-C4B58CEB26E7}.Release|x86.Build.0 = Release|Win32
+		{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}.Debug|x64.ActiveCfg = Debug|x64
+		{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}.Debug|x64.Build.0 = Debug|x64
+		{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}.Debug|x86.ActiveCfg = Debug|Win32
+		{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}.Debug|x86.Build.0 = Debug|Win32
+		{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}.Release|x64.ActiveCfg = Release|x64
+		{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}.Release|x64.Build.0 = Release|x64
+		{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}.Release|x86.ActiveCfg = Release|Win32
+		{CFE186FE-0F9E-4E08-9F0F-12CA4F02652C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
