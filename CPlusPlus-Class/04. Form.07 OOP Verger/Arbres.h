@@ -14,7 +14,7 @@ private:
     int valueFruit_;
 public:
     Arbres(std::string,std::string,int,int);//constructeur avec variable(tree name/fruitName/maxprod/minProd)
-    ~Arbres();//destructeur
+    ~Arbres();//destructeur(il dit juste l'arbre qui ce fait dêtruire)
 
     std::string printTreeName(); //récupére le nom de l'arbre
     std::string printTreeFruit();//récupére le fruit de l'arbre
