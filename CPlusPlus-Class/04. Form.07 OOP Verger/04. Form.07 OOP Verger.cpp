@@ -7,7 +7,9 @@
 int main()
 {
 	int testy;
-	Vergers Vergers();
+	Vergers myvergers();
+
+
 	std::cin >> testy;
 	std::cout << "\nfinish";
 

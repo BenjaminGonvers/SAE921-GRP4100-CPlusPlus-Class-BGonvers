@@ -1,6 +1,8 @@
 #pragma once
-#include "Vergers.h"
+
 #include <string>
+#include "Vergers.h"
+
 
 class Arbres : 
    public Vergers
